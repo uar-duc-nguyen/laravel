@@ -89,7 +89,7 @@ class FileStore implements StoreInterface {
 	{
 		if ( ! $this->files->isDirectory($directory = dirname($path)))
 		{
-			$this->files->makeDirectory($directory, 0777, true);
+			$this->files->makeDirectory($directory, 0777, true, true);
 		}
 	}
 
